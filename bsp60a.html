@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+  <title>Formular</title>
+  <meta charset=utf-8>
+  <style>
+    table { 
+      border: 1px solid black;
+      border-collapse: collapse; 
+    }
+    td { 
+      border: 1px solid black;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form name="beispiel-formular" action="bsp60a.php" method="get">
+
+  <table>
+    <tr>
+      <td>
+        Einzeiliges Textfeld mit Eingabe:<br>
+        <input type=text name="text1_m" value="etwas   Text">
+      </td>
+      <td>
+        Einzeiliges Textfeld ohne Eingabe:<br>
+        <input type=text name="text1_o">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Datumseingabe mit Wert:<br>
+        <input type=date name="datum_m" value="2020-06-06">
+      </td>
+      <td>    
+        Datumseingabe ohne Wert:<br>
+        <input type=date name="datum_o">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Zeiteingabe mit Wert:<br>
+        <input type=time name="zeit_m" value="12:35">
+      </td>
+      <td>
+        Zeiteingabe ohne Wert:<br>
+        <input type=time name="zeit_o">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Zahleingabe mit Wert:<br>
+        <input type=number name="zahl_m" value="3028">
+      </td>
+      <td>
+        Zahleingabe ohne Wert:<br>
+        <input type=number name="zahl_o">
+      </td>
+    </tr>
+  </table><br><br>
+  
+  <button>Absenden</button>
+
+  </form>
+</body>
+</html>

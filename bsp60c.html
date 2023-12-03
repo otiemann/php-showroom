@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+  <title>Formular</title>
+  <meta charset=utf-8>
+  <style>
+    table { 
+      border: 1px solid black;
+      border-collapse: collapse; 
+    }
+    td { 
+      border: 1px solid black;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form name="beispiel-formular" action="bsp60c.php" method="get">
+
+  <table>
+    <tr>
+      <td>
+        Einfachauswahl mit Eingabe:<br>
+        <label>
+          <input type=radio name="farbe_m" value="rot" checked>
+          rot
+        </label>&nbsp;&nbsp;&nbsp;
+        <label>
+          <input type=radio name="farbe_m" value="grün">
+          grün
+        </label>
+      </td>
+      <td>
+        Einfachauswahl mit Eingabe:<br>
+        <label>
+          <input type=radio name="farbe_o" value="rot">
+          rot
+        </label>&nbsp;&nbsp;&nbsp;
+        <label>
+          <input type=radio name="farbe_o" value="grün">
+          grün
+        </label>
+      </td>
+    </tr>
+  </table><br><br>
+
+  <button>Absenden</button>
+
+  </form>
+</body>
+</html>

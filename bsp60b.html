@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+  <title>Formular</title>
+  <meta charset=utf-8>
+  <style>
+    table { 
+      border: 1px solid black;
+      border-collapse: collapse; 
+    }
+    td { 
+      border: 1px solid black;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form name="beispiel-formular" action="bsp60b.php" method="get">
+
+  <table>
+    <tr>
+      <td>
+        Mehrzeiliges Textfeld mit Eingabe:<br>
+        <textarea name="text2_m">Text über
+        mehrere Zeilen</textarea>
+      </td>
+      <td>
+        Mehrzeiliges Textfeld ohne Eingabe:<br>
+        <textarea name="text2_o"></textarea>
+      </td>
+    </tr>
+  </table><br><br>
+
+  <button>Absenden</button>
+
+  </form>
+</body>
+</html>
